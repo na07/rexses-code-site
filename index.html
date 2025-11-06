@@ -1,11 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documenggggt</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rexses — Landing (demo)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header class="site__header">
+    <div class="container header__inner">
+      <a class="brand" href="#" aria-label="Rexses Home">Rexses</a>
+
+      <nav class="nav" aria-label="Main">
+        <a class="nav__link" href="#">Location</a>
+        <a class="nav__link" href="#">Media</a>
+        <a class="nav__link" href="#">Contacts</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" type="button">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="kicker"># Coding</p>
+          <h1 class="hero__title">
+            <span class="highlight">Rexses Code</span>
+            <span class="hero__title--sub">Is Simple.</span>
+          </h1>
+          <p class="hero__lead">We have many professional people to support your project all time.</p>
+
+          <div class="hero__cta">
+            <button class="btn btn--primary" type="button">Create Project</button>
+            <a class="btn btn--muted" href="#" role="button">Our Offices</a>
+          </div>
+
+          <ul class="contact-list" aria-hidden="false">
+            <li>Schwarzwaldstraße 9, 80331 München</li>
+            <li>+49 152 - 3943 - 4234</li>
+            <li>rexsescode@mail.com</li>
+          </ul>
+        </div>
+
+        <aside class="hero__visual" aria-label="Hero image">
+          <!-- картинка обёрнута в ссылку -->
+          <a class="visual__link" href="https://www.figma.com/design/nyVfsP6wLwOoM0hk5HmhFP" target="_blank" rel="noopener noreferrer">
+            <img class="visual__img"
+                 src="images/teampic.png"
+                 alt="Office team working at computers">
+          </a>
+
+          <div class="visual__card">Our Office in DE — We work hard for your secure and comfort</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABILITIES -->
+    <section class="abilities" aria-labelledby="abilities-title">
+      <div class="container">
+        <p class="section__eyebrow">Our Abilities</p>
+        <h2 id="abilities-title" class="section__title">Work Category <span class="highlight">Rexses Code</span></h2>
+
+        <ul class="abilities__grid">
+          <li class="ability-card">
+            <div class="ability-card__icon" aria-hidden>‹/›</div>
+            <h3 class="ability-card__title">Web Dev</h3>
+            <p class="ability-card__desc">Front End, Back End, Full Stack</p>
+          </li>
+
+          <li class="ability-card">
+            <div class="ability-card__icon" aria-hidden>📱</div>
+            <h3 class="ability-card__title">Android Dev</h3>
+            <p class="ability-card__desc">Kotlin & React Native</p>
+          </li>
+
+          <li class="ability-card">
+            <div class="ability-card__icon" aria-hidden>🎨</div>
+            <h3 class="ability-card__title">Design</h3>
+            <p class="ability-card__desc">UI / UX & Graphic</p>
+          </li>
+
+          <li class="ability-card">
+            <div class="ability-card__icon" aria-hidden>🗺</div>
+            <h3 class="ability-card__title">Road Map</h3>
+            <p class="ability-card__desc">Project Navigation</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FEATURE (Image + checklist) -->
+    <section class="feature">
+      <div class="container feature__inner">
+        <a class="feature__media" href="https://www.figma.com/design/nyVfsP6wLwOoM0hk5HmhFP" target="_blank" rel="noopener noreferrer">
+          <img src="images/outteam.png"
+               alt="Designer at desk" />
+          <div class="feature__pill">Laravel · React · Figma · Vue</div>
+        </a>
+
+        <div class="feature__content">
+          <p class="section__eyebrow">Join Rexses Code</p>
+          <h2 class="feature__title">Our Team Wait To Help You</h2>
+
+          <ul class="feature__list">
+            <li>Video Reports</li>
+            <li>Full Time Control</li>
+            <li>Support 24/7</li>
+            <li>Many Good Comments</li>
+          </ul>
+
+          <button class="btn btn--primary">Try Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS / POSSIBILITIES -->
+    <section class="partners" aria-label="Partners and technologies">
+      <div class="container">
+        <h3 class="section__title">All Possibilities For You</h3>
+
+        <ul class="partners__grid">
+          <li><a href="#" class="partner" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel"><span>Laravel</span></a></li>
+          <li><a href="#" class="partner"><img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png" alt="JS"><span>JavaScript</span></a></li>
+          <li><a href="#" class="partner"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"><span>React</span></a></li>
+          <li><a href="#" class="partner"><img src="images/fig.png" alt="Figma"><span>Figma</span></a></li>
+          <li><a href="#" class="partner"><img src="images/v.png" alt="Vue"><span>Vue</span></a></li>
+          <li><a href="#" class="partner"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"><span>Python</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO / CARDS -->
+    <section class="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <h3 id="portfolio-title" class="section__title">All Work Prices For You</h3>
+
+        <ul class="portfolio__grid">
+          <li class="project-card">
+            <a class="project-card__link" href="https://www.figma.com/design/nyVfsP6wLwOoM0hk5HmhFP" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f3b2c1d8e6f4a2c3b7a8d6f9c0b1a2d" alt="Project 1">
+            </a>
+            <div class="project-card__body">
+              <h4>Complete Freelancer UI/UX & Illustration Design</h4>
+              <div class="project-card__meta">
+                <span class="price">$567.00</span>
+                <span class="tag">UI/UX</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="images/tovar1.png" alt="Project 2">
+            </a>
+            <div class="project-card__body">
+              <h4>Complete Full-Stack Laravel React JS</h4>
+              <div class="project-card__meta">
+                <span class="price">$890.00</span>
+                <span class="tag">Full-Stack</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="images/tovar2.png" alt="Project 3">
+            </a>
+            <div class="project-card__body">
+              <h4>Complete Full-Stack Laravel Flutter</h4>
+              <div class="project-card__meta">
+                <span class="price">$890.00</span>
+                <span class="tag">Mobile</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site__footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <h4>Rexses</h4>
+        <address>
+          Rexses Code<br>
+          Schwarzwaldstraße 9, 80331 München<br>
+          <a href="tel:+4915239434234">+49 152 - 3943 - 4234</a><br>
+          <a href="mailto:rexsescode@mail.com">rexsescode@mail.com</a>
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h5>Subscribe</h5>
+        <form class="newsletter" onsubmit="event.preventDefault()" aria-label="Subscribe to newsletter">
+          <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer__col">
+        <div class="socials" aria-hidden>
+          <a href="#" class="social">FB</a>
+          <a href="#" class="social">TW</a>
+          <a href="#" class="social">IG</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="container">© Rexses Code — 2025</div>
+    </div>
+  </footer>
 </body>
 </html>
