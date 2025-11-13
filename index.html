@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rexses — Landing (demo)</title>
@@ -14,19 +15,50 @@
       <a class="brand" href="#" aria-label="Rexses Home">Rexses</a>
 
       <nav class="nav" aria-label="Main">
-        <a class="nav__link" href="#">Location</a>
-        <a class="nav__link" href="#">Media</a>
-        <a class="nav__link" href="#">Contacts</a>
-      </nav>
 
-      <div class="header__actions">
-        <button class="btn btn--ghost" type="button">Register</button>
-      </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Locations
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://maps.app.goo.gl/tURYuFShPop4EEX67">Germany</a></li>
+            <li><a class="dropdown-item" href="https://maps.app.goo.gl/z6CaAvtUAoEDk9KBA">France</a></li>
+            <li><a class="dropdown-item" href="https://maps.app.goo.gl/BYkus77wHRFF69PQA">USA</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Media
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Instagram</a></li>
+            <li><a class="dropdown-item" href="#">Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contacts
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Phone Number</a></li>
+            <li><a class="dropdown-item" href="#">Email</a></li>
+          </ul>
+
+          <input class="l" type="checkbox" style="margin-right:auto;" />
+
+        </div>
+      </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
+
     <section class="hero">
       <div class="container hero__inner">
         <div class="hero__content">
@@ -38,19 +70,23 @@
           <p class="hero__lead">We have many professional people to support your project all time.</p>
 
           <div class="hero__cta">
-            <button class="btn btn--primary" type="button">Create Project</button>
-            <a class="btn btn--muted" href="#" role="button">Our Offices</a>
-          </div>
+            <button onclick="document.getElementById('target').scrollIntoView({behavior:'smooth'})" class="btn btn--primary" type="button">Create Project</button>
+                    <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Locations
+                    </a>
 
-          <ul class="contact-list" aria-hidden="false">
-            <li>Schwarzwaldstraße 9, 80331 München</li>
-            <li>+49 152 - 3943 - 4234</li>
-            <li>rexsescode@mail.com</li>
-          </ul>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://maps.app.goo.gl/tURYuFShPop4EEX67">Germany</a></li>
+                      <li><a class="dropdown-item" href="https://maps.app.goo.gl/z6CaAvtUAoEDk9KBA">France</a></li>
+                      <li><a class="dropdown-item" href="https://maps.app.goo.gl/BYkus77wHRFF69PQA">USA</a></li>
+                    </ul>
+                  </div>
+          </div>
         </div>
 
         <aside class="hero__visual" aria-label="Hero image">
-          <!-- картинка обёрнута в ссылку -->
+
           <a class="visual__link" href="https://www.figma.com/design/nyVfsP6wLwOoM0hk5HmhFP" target="_blank" rel="noopener noreferrer">
             <img class="visual__img"
                  src="images/teampic.png"
@@ -62,7 +98,7 @@
       </div>
     </section>
 
-    <!-- ABILITIES -->
+
     <section class="abilities" aria-labelledby="abilities-title">
       <div class="container">
         <p class="section__eyebrow">Our Abilities</p>
@@ -96,7 +132,7 @@
       </div>
     </section>
 
-    <!-- FEATURE (Image + checklist) -->
+
     <section class="feature">
       <div class="container feature__inner">
         <a class="feature__media" href="https://www.figma.com/design/nyVfsP6wLwOoM0hk5HmhFP" target="_blank" rel="noopener noreferrer">
@@ -106,7 +142,6 @@
         </a>
 
         <div class="feature__content">
-          <p class="section__eyebrow">Join Rexses Code</p>
           <h2 class="feature__title">Our Team Wait To Help You</h2>
 
           <ul class="feature__list">
@@ -116,36 +151,36 @@
             <li>Many Good Comments</li>
           </ul>
 
-          <button class="btn btn--primary">Try Now</button>
+          <button onclick="document.getElementById('target').scrollIntoView({behavior:'smooth'})" class="btn btn--primary">Try Now</button>
         </div>
       </div>
     </section>
 
-    <!-- LOGOS / POSSIBILITIES -->
     <section class="partners" aria-label="Partners and technologies">
-      <div class="container">
+      <div class="container" style="text-align: center;">
         <h3 class="section__title">All Possibilities For You</h3>
-
-        <ul class="partners__grid">
-          <li><a href="#" class="partner" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel"><span>Laravel</span></a></li>
-          <li><a href="#" class="partner"><img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png" alt="JS"><span>JavaScript</span></a></li>
-          <li><a href="#" class="partner"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"><span>React</span></a></li>
-          <li><a href="#" class="partner"><img src="images/fig.png" alt="Figma"><span>Figma</span></a></li>
-          <li><a href="#" class="partner"><img src="images/v.png" alt="Vue"><span>Vue</span></a></li>
-          <li><a href="#" class="partner"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"><span>Python</span></a></li>
-        </ul>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+          <ul class="partners__grid" style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0; margin: 0;">
+            <li><a href="#" class="partner" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel"><span>Laravel</span></a></li>
+            <li><a href="#" class="partner"><img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png" alt="JS"><span>JavaScript</span></a></li>
+            <li><a href="#" class="partner"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"><span>React</span></a></li>
+            <li><a href="#" class="partner"><img src="images/fig.png" alt="Figma"><span>Figma</span></a></li>
+            <li><a href="#" class="partner"><img src="images/v.png" alt="Vue"><span>Vue</span></a></li>
+            <li><a href="#" class="partner"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"><span>Python</span></a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- PORTFOLIO / CARDS -->
+
     <section class="portfolio" aria-labelledby="portfolio-title">
-      <div class="container">
+      <div id="target" class="container">
         <h3 id="portfolio-title" class="section__title">All Work Prices For You</h3>
 
         <ul class="portfolio__grid">
           <li class="project-card">
-            <a class="project-card__link" href="https://www.figma.com/design/nyVfsP6wLwOoM0hk5HmhFP" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f3b2c1d8e6f4a2c3b7a8d6f9c0b1a2d" alt="Project 1">
+            <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="images/tovar3.png" alt="Project 1">
             </a>
             <div class="project-card__body">
               <h4>Complete Freelancer UI/UX & Illustration Design</h4>
@@ -185,39 +220,18 @@
       </div>
     </section>
   </main>
-
-  <footer class="site__footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <h4>Rexses</h4>
-        <address>
-          Rexses Code<br>
-          Schwarzwaldstraße 9, 80331 München<br>
-          <a href="tel:+4915239434234">+49 152 - 3943 - 4234</a><br>
-          <a href="mailto:rexsescode@mail.com">rexsescode@mail.com</a>
-        </address>
-      </div>
-
-      <div class="footer__col">
-        <h5>Subscribe</h5>
-        <form class="newsletter" onsubmit="event.preventDefault()" aria-label="Subscribe to newsletter">
-          <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
-          <button class="btn btn--primary" type="submit">Subscribe</button>
-        </form>
-      </div>
-
-      <div class="footer__col">
-        <div class="socials" aria-hidden>
-          <a href="#" class="social">FB</a>
-          <a href="#" class="social">TW</a>
-          <a href="#" class="social">IG</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__bar">
-      <div class="container">© Rexses Code — 2025</div>
-    </div>
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
+<footer class="site__footer" style="text-align:center;">
+  <div class="container footer__inner" style="display:inline-block;">
+    <div class="footer__col">
+      <h4 style="margin:0 0 8px 0;">Rexses</h4>
+      <address style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:0;">
+        <span style="white-space:nowrap;">Rexses Code</span>
+        <span style="white-space:nowrap;">Schwarzwaldstraße 9, 80331 München</span>
+        <span style="white-space:nowrap;">+49 152 - 3943 - 4234</span>
+        <span style="white-space:nowrap;">rexsescode@mail.com</span>
+      </address>
+    </div>
+  </div>
+</footer>
