@@ -198,16 +198,58 @@ body{
 }
 
 body.light-theme {
-    background: #970a97;
-    color: rgb(167, 7, 189);
+  --bg: #f8fafc !important;
+  --panel: #ffffff !important;
+  --card: #ffffff !important;
+  --muted: #64748b !important;
+  --accent: #16a34a !important;
+  
+  background: linear-gradient(180deg, #f1f5f9 0%, #f8fafc 100%) !important;
+  color: #1e293b !important;
 }
 
-
-body.light-theme header{
-    background: #690388;
-    color: rgb(120, 4, 187);
+body.light-theme * {
+  background-color: transparent !important;
 }
 
-body.light-theme .footer{
-     background: #3c0461;
+body.light-theme .ability-card,
+body.light-theme .project-card,
+body.light-theme .partner,
+body.light-theme .visual__card,
+body.light-theme .feature__pill,
+body.light-theme .tag,
+body.light-theme .dropdown-menu,
+body.light-theme .btn {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  border-color: rgba(0,0,0,0.1) !important;
+}
+
+body.light-theme,
+body.light-theme .hero__lead,
+body.light-theme .ability-card__desc,
+body.light-theme .project-card__meta,
+body.light-theme .partner span,
+body.light-theme .section__eyebrow,
+body.light-theme p,
+body.light-theme h1, 
+body.light-theme h2, 
+body.light-theme h3, 
+body.light-theme h4,
+body.light-theme span,
+body.light-theme a {
+  color: #1e293b !important;
+}
+
+body.light-theme .btn--primary,
+body.light-theme .brand {
+  background: #16a34a !important;
+  color: white !important;
+}
+
+body.light-theme .nav__link,
+body.light-theme .btn--muted,
+body.light-theme .btn--ghost,
+body.light-theme .footer__bar {
+  color: #475569 !important;
 }
